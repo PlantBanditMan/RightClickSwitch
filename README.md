@@ -1,11 +1,10 @@
 # Right Click Switch
 
-This is a Microsoft Edge extension that implements a context menu event listener with specific behavior for Ctrl+Alt key presses.
+Easily pick between a web page's right-click context menu and the native context menu by pressing `Ctrl + Alt`.
 
 ## Project Structure
 
-- `manifest.json`: Contains the metadata for the Edge extension, including the name, version, permissions, and background scripts.
-- `background.js`: The background script for the extension, handling events and managing the extension's lifecycle.
+- `manifest.json`: Contains the metadata for the Edge extension, including the name, version, permissions, and content scripts.
 - `content.js`: The content script that runs in the context of web pages, implementing the context menu event listener.
 - `popup/`: Contains the files for the extension's popup interface.
   - `popup.html`: Defines the HTML structure for the popup.

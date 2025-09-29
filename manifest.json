@@ -2,14 +2,7 @@
   "manifest_version": 3,
   "name": "Right Click Switch",
   "version": "1.0",
-  "description": "An Edge extension that switches context menu behavior based on key presses.",
-  "permissions": [
-    "contextMenus",
-    "activeTab"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Easily pick between a web page's right-click context menu and the native context menu by pressing Ctrl+Alt.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -17,16 +10,6 @@
     }
   ],
   "action": {
-    "default_popup": "popup/popup.html",
-    "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    }
-  },
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "default_popup": "popup/popup.html"
   }
 }

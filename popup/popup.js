@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('myButton');
+    const button = document.getElementById('action-button');
     button.addEventListener('click', function() {
         // Handle button click event
-        alert('Button clicked!');
+        alert('Right-click on a webpage!\n- Normal right-click: Browser menu\n- Ctrl+Alt+right-click: Site menu');
     });
 });
 
