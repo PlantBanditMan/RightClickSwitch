@@ -1,4 +1,4 @@
-# My Edge Extension
+# Right Click Switch
 
 This is a Microsoft Edge extension that implements a context menu event listener with specific behavior for Ctrl+Alt key presses.
 
@@ -16,7 +16,7 @@ This is a Microsoft Edge extension that implements a context menu event listener
 1. Clone the repository or download the source code.
 2. Open Microsoft Edge and navigate to `edge://extensions/`.
 3. Enable "Developer mode" by toggling the switch in the top right corner.
-4. Click on "Load unpacked" and select the `my-edge-extension` directory.
+4. Click on "Load unpacked" and select the `RightClickSwitch` directory.
 5. The extension should now be loaded and ready to use.
 
 ## Usage

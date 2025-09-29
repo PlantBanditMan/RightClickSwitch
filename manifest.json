@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "My Edge Extension",
+  "name": "Right Click Switch",
   "version": "1.0",
-  "description": "An Edge extension that implements a context menu event listener with specific behavior for Ctrl+Alt key presses.",
+  "description": "An Edge extension that switches context menu behavior based on key presses.",
   "permissions": [
     "contextMenus",
     "activeTab"
