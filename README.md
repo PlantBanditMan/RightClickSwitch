@@ -1,28 +1,40 @@
 # Right Click Switch
 
-Easily pick between a web page's right-click context menu and the native context menu by pressing `Ctrl + Alt`.
+A simple extension that lets you choose between a website's custom right-click menu and the browser's native context menu with an key combo.
 
-## Project Structure
+**How it works:**  
 
-- `manifest.json`: Contains the metadata for the Edge extension, including the name, version, permissions, and content scripts.
-- `content.js`: The content script that runs in the context of web pages, implementing the context menu event listener.
-- `popup/`: Contains the files for the extension's popup interface.
-  - `popup.html`: Defines the HTML structure for the popup.
-  - `popup.js`: Contains the JavaScript logic for handling user interactions in the popup.
+- Right-click normally → Website's custom menu appears  
+- Hold `Ctrl + Alt` while right-clicking → Browser's default menu appears  
 
-## Setup Instructions
+## Installation
 
-1. Clone the repository or download the source code.
-2. Open Microsoft Edge and navigate to `edge://extensions/`.
-3. Enable "Developer mode" by toggling the switch in the top right corner.
-4. Click on "Load unpacked" and select the `RightClickSwitch` directory.
-5. The extension should now be loaded and ready to use.
+1. Download the extension files from the [Edge Add-ons store](https://microsoftedge.microsoft.com/addons/) (link coming soon) or clone this repository
+2. Open Microsoft Edge and go to `edge://extensions/`
+3. Enable "Developer mode" in the top right
+4. Click "Load unpacked" and select the `RightClickSwitch` folder
+5. The extension icon will appear in your toolbar
 
 ## Usage
 
-- To use the context menu, press `Ctrl + Alt` while on a web page to trigger the native menu.
-- Interact with the popup by clicking on the extension icon in the toolbar.
+Simply right-click on any webpage. Use `Ctrl + Alt + Right-click` when you want to use the normal right-click.
 
-## License
+Click the extension icon in the toolbar for a quick reminder of how to use it.
 
-This project is licensed under the MIT License.
+## For Developers
+
+This is a basic Manifest V3 Edge extension with a single content script.
+
+### Project Structure
+
+- `manifest.json`: Extension metadata and permissions
+- `content.js`: Content script that handles context menu events
+- `popup/`: Simple popup UI with usage instructions
+
+### Building
+
+No build process required - just load the unpacked extension in Edge/Chrome for development.
+
+### Contributing
+
+Free to fork and modify. Super simple stuff.
