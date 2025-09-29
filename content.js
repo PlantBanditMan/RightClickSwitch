@@ -16,14 +16,14 @@ function suppress(e) {
 
 // Set the context menu that will appear ahead of time.
 function preMouseDownHandler(e) {
-  comboLatched = isCombo(e); // Determines whether the native browser menu will appear.
-  if (comboLatched) suppress(e); // keep native menu
+  comboLatched = isCombo(e);
+  if (comboLatched) suppress(e); // Block handlers for custom menu
 }
-// Now we decide which menu will appear upon actually clicking.
+// Decide which menu will appear upon actually clicking.
 function contextMenuHandler(e) {
-  const combo = isCombo(e) || comboLatched; // If you're holding the keys, or just recently held them ("latched")
+  const combo = isCombo(e) || comboLatched; // Check for currently or recently held combo.
   if (combo) suppress(e); // allow native menu by suppressing page handlers
-  comboLatched = false; // reset
+  comboLatched = false; // Reset for next interaction
 }
 
 // Listener registrations
